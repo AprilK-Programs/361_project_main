@@ -1,0 +1,45 @@
+h1, h2, h3 { 
+    margin-left: 16px;
+    color: white;
+}
+nav {
+    background-color: darkgray; 
+    padding: 16px; 
+    display: flex; 
+    justify-content: center;
+}
+
+nav a { color: white; 
+    text-decoration: none; 
+}
+
+a {
+    margin-left: 16px;
+}
+
+button { 
+    margin-left: 16px;
+}
+body{
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.centerDiv {
+    text-align: center;
+}
+legend{
+    color: white;
+}
+label{
+    color: white;
+}
+p {
+    color:white;
+}
+.popupDiv{
+    color: white;
+}

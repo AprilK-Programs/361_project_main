@@ -1,0 +1,27 @@
+ <nav>
+        Navigation: 
+        <a href="/">Home</a>
+        <a href="/help">Help</a>
+    </nav>
+    <form action="/create/character" method="POST">
+        <!-- The fieldset element is used to group several controls and labels within a web form.-->
+        <fieldset>
+            <!-- The legend element is used to add a caption for the content of its parent fieldset.-->
+            <legend>Create your character:</legend>
+            <label>Character Name:
+                <input type="text" name="name" size="30" maxlength="100" required="required">
+            </label>
+            <br />
+    
+            <p>Character Gender:
+                <br />
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="nonbinary" value="nonbinary">
+                <label for="nonbinary">Nonbinary</label>
+            </p>
+        </fieldset>
+        <button type="submit">Create Character</button>
+    </form>

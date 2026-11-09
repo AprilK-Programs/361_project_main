@@ -1,0 +1,30 @@
+<script>
+    window.serverCurrentCharacter = {{{json character}}};
+</script>
+<script src="/script.js"></script>
+ <nav>
+        Navigation: 
+        <a href="/">Home</a>
+        <a href="/help">Help</a>
+</nav>
+<div class ="centerDiv">
+    {{#if pop_up}}
+      <div class="popupDiv" >
+      {{pop_up}}
+      </div>
+    {{/if}}
+<h1>Shop Home</h1>
+<p>Welcome {{character.name}}</p>
+<p>Current Gold: {{character.gold}}</p>
+<p>Current Health: {{character.health}}</p>
+<form id='explore' method ='POST' action ='/gamehome/explore'> 
+            <button type='submit' onclick="return confirm('Oh no! You encountered some zombies! Fight for loot or flee?')">
+                Explore
+            </button>
+        </form>
+    <form id='sell' method ='POST' action ='/gamehome/sell'> 
+            <button type='submit' onclick="return confirm('You can try and sell some random items for gold. Continue?')">
+                Sell
+            </button>
+        </form>
+</div>
